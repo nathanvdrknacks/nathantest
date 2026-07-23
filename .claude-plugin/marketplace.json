@@ -3,5 +3,12 @@
   "owner": {
     "name": "Knacks V2 Sandbox"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "sales",
+      "source": "./plugins/sales",
+      "description": "Sales",
+      "version": "0.1.9"
+    }
+  ]
 }
