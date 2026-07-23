@@ -8,7 +8,7 @@
       "name": "sales",
       "source": "./plugins/sales",
       "description": "Sales",
-      "version": "0.1.10"
+      "version": "0.1.11"
     }
   ]
 }
