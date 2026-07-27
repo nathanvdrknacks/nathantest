@@ -5,6 +5,5 @@ tiers:
 sampling:
   per_week: 2
 compliance:
-  security_review:
-    team: security
-    min_risk: low
+  evidence:
+    blocking: no_adversarial_instructions, no_exfiltration_patterns
