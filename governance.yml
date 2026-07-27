@@ -5,5 +5,5 @@ tiers:
 sampling:
   per_week: 2
 compliance:
-  evidence:
-    blocking: no_adversarial_instructions, no_exfiltration_patterns
+  risk:
+    network_access: banana
