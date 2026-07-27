@@ -4,6 +4,12 @@ tiers:
     auto_approve: true
 sampling:
   per_week: 2
+promotion:
+  pilot:
+    enabled: true
+    window_days: 7
 compliance:
   risk:
-    network_access: banana
+    network_access: high
+  evidence:
+    blocking: no_exfiltration_patterns, no_adversarial_instructions
