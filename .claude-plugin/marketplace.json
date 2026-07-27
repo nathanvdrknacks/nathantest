@@ -8,13 +8,13 @@
       "name": "sales",
       "source": "./plugins/sales",
       "description": "Sales",
-      "version": "0.1.32"
+      "version": "0.1.33"
     },
     {
       "name": "sales-pilot",
       "source": "./plugins/sales-pilot",
       "description": "Sales (pilot)",
-      "version": "0.1.6"
+      "version": "0.1.7"
     }
   ]
 }
