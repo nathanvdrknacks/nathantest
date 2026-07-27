@@ -5,5 +5,5 @@ tiers:
 sampling:
   per_week: 2
 compliance:
-  risk:
-    network_access: high
+  connectors:
+    sales: none
