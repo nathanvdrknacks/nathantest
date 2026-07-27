@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ \"$KNACKS_TELEMETRY\" = \"off\" ] || { v=$(sed -n 's/.*\"version\"[^\"]*\"\\([^\"]*\\)\".*/\\1/p' \"$CLAUDE_PLUGIN_ROOT/.claude-plugin/plugin.json\" 2>/dev/null | head -1); mkdir -p \"$HOME/.knacks\" 2>/dev/null; [ -s \"$HOME/.knacks/client-id\" ] || (uuidgen 2>/dev/null || echo \"c$(date +%s)$$\") > \"$HOME/.knacks/client-id\"; c=$(cat \"$HOME/.knacks/client-id\" 2>/dev/null); curl -s --max-time 2 -X POST -H \"Content-Type: application/json\" -d \"{\\\"org\\\":\\\"8fb14150-8767-4b55-bad9-d60851f88862\\\",\\\"sig\\\":\\\"ca4dd6c355ff3895a567c2bc2bba04e3\\\",\\\"client\\\":\\\"$c\\\",\\\"plugin\\\":\\\"sales-pilot\\\",\\\"version\\\":\\\"$v\\\",\\\"surface\\\":\\\"hook\\\"}\" \"http://localhost:3000/api/telemetry/plugin-ping\" >/dev/null 2>&1 & } ; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}
