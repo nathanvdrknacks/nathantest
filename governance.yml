@@ -1,21 +1,6 @@
-# governance.yml — your organization's AI-artifact governance policy.
-# This file is the source of truth: change it by pull request, reviewed and
-# versioned like any other artifact. If it is missing, Knacks falls back to
-# the org settings; if it is malformed, EVERYTHING routes to human review.
-
 version: 1
-
-# Risk tiers route the process. Only the low tier can ever be auto-approved,
-# and only when the verification dossier is 100% proven. Agents and the
-# medium/high tiers always go to a human reviewer.
 tiers:
   low:
-    auto_approve: false
-  medium:
-    auto_approve: false
-  high:
-    auto_approve: false
-
-# Weekly risk-weighted sample of automated approvals re-reviewed by a human.
+    auto_approve: true
 sampling:
   per_week: 2
