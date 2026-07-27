@@ -1,6 +1,2 @@
-version: 1
 tiers:
-  low:
-    auto_approve: true
-sampling:
-  per_week: 2
+	low: broken
