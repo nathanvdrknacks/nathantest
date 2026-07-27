@@ -6,5 +6,5 @@ sampling:
   per_week: 2
 promotion:
   pilot:
-    enabled: false
+    enabled: true
     window_days: 7
