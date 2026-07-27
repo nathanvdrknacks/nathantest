@@ -1,2 +1,5 @@
 tiers:
-	low: broken
+  low:
+    auto_approve: true
+sampling:
+  per_week: 0
