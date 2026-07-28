@@ -5,6 +5,12 @@
   },
   "plugins": [
     {
+      "name": "everyone",
+      "source": "./plugins/everyone",
+      "description": "Skills partagés à toute l'entreprise — outillage knacks inclus",
+      "version": "0.1.0"
+    },
+    {
       "name": "sales",
       "source": "./plugins/sales",
       "description": "Sales",
