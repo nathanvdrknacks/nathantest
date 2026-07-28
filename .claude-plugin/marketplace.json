@@ -14,7 +14,7 @@
       "name": "sales",
       "source": "./plugins/sales",
       "description": "Sales",
-      "version": "0.1.50"
+      "version": "0.1.51"
     },
     {
       "name": "sales-pilot",
