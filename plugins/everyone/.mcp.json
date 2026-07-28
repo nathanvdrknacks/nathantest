@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "knacks": {
+      "type": "http",
+      "url": "http://localhost:3000/api/mcp",
+      "oauth": {
+        "clientId": "a57b2778-8705-4408-9fe9-52ddff5aeb5a"
+      }
+    }
+  }
+}
